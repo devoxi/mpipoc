@@ -15,7 +15,7 @@ def start_master(sq):
 
     # Spawn workers
     mpi_info = MPI.Info.Create()
-    #mpi_info.Set("add-host", "localhost")
+    #mpi_info.Set("add-host", "localhost,host2,host3")
     comm = MPI.COMM_SELF.Spawn(sys.executable, args=["slave.py", str(config)], maxprocs=count_bs, info=mpi_info)
 
     # Printing debugs
