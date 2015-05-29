@@ -1,11 +1,11 @@
-# pypoc
-My experiments with Python
+# mpipoc
+My experiments with MPI and Python
 
-#### Configuration for MPI related PoCs
-$ mv mpi_config/mca-params.conf ~/.openmpi/mca-params.conf
+#### Configuration
+`$ mv mpi_config/mca-params.conf ~/.openmpi/mca-params.conf`
 
-#### Usage of MPI related PoCs
-* mpi_helloworld:  
-$ mpirun -np 4 mpihelloworld.py
+#### Usage
+* mpi_hello:  
+`$ mpirun -np 4 mpihelloworld.py`
 * mpi_poc:  
-$ ./cli.py
+`$ ./cli.py`
